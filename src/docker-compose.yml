@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+    hello:
+        container_name: hello_pipeline
+        image: "${JOB_NAME}:${BUILD_ID}"
+        build:
+            context: HelloPipeline
